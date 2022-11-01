@@ -63,10 +63,10 @@ func TerraformSetupBuilder(version, providerSource, providerVersion string) terr
 		}
 
 		// Set credentials in Terraform provider configuration.
-		/*ps.Configuration = map[string]any{
-			"username": creds["username"],
-			"password": creds["password"],
-		}*/
+		// https://registry.terraform.io/providers/aiven/aiven/latest/docs#example-usage
+		ps.Configuration = map[string]any{
+			"api_token": creds["api_token"],
+		}
 		return ps, nil
 	}
 }
