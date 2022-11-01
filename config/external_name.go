@@ -9,8 +9,8 @@ import "github.com/upbound/upjet/pkg/config"
 // ExternalNameConfigs contains all external name configurations for this
 // provider.
 var ExternalNameConfigs = map[string]config.ExternalName{
-	// Import requires using a randomly generated ID from provider: nl-2e21sda
-	"aiven_pg": config.IdentifierFromProvider,
+	// Using name as identifier
+	"aiven_pg": config.NameAsIdentifier,
 }
 
 // ExternalNameConfigurations applies all external name configs listed in the
